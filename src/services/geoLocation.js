@@ -12,8 +12,12 @@ export const getGeoLocation = async query => {
   url.search = new URLSearchParams(params);
 
   // fetch
-  const response = await fetch(url);
-  const data = await response.json();
-  const { lat, lng } = data.hits[0].point;
-  return { lat, lng };
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    const { lat, lng } = data.hits[0].point;
+    return { lat, lng };
+  } catch (e) {
+    console.log(e);
+  }
 };

@@ -13,7 +13,7 @@ const App = () => {
   // }, []);
 
   // console.log(coordonates);
-  getWeather();
+  // getWeather();
   return (
     <div>
       <h1>Weather</h1>
