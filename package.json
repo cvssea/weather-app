@@ -1,0 +1,60 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather App with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --env.dev --env.CORS_PROXY=https://cors-anywhere.herokuapp.com/ --open",
+    "build": "webpack --mode production --env.prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvssea/weather-app.git"
+  },
+  "keywords": [
+    "react",
+    "api",
+    "weather"
+  ],
+  "author": "CV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvssea/weather-app/issues"
+  },
+  "homepage": "https://github.com/cvssea/weather-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.2",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "core-js": "^3.2.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "browserslist": {
+    "production": [
+      "> 3%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
